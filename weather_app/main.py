@@ -9,7 +9,7 @@ response = requests.get(
 )
 
 weather_data = response.json()
-print(weather_data)
+#print(weather_data)
 
 temperature_K = str(weather_data['main']['temp']) + "K"
 temperature_C = str(float(weather_data['main']['temp']) - 272.15)[0:5] + "C"
